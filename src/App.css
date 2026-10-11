@@ -1,0 +1,217 @@
+/* RentEase - Simple and Clean College Project Styling */
+/* Inspired by reference: https://placement-frontend-0wbs.onrender.com */
+
+body {
+  color: #1e293b;
+  background: #f1f5f9;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  max-width: 820px;
+  margin: 0 auto;
+  padding: 24px 16px;
+}
+
+h1 {
+  text-align: center;
+  color: #0f2942;
+  margin-top: 10px;
+  margin-bottom: 6px;
+  font-size: 26px;
+}
+
+.subtitle {
+  text-align: center;
+  color: #64748b;
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+/* Tab Navigation */
+.tabs {
+  gap: 8px;
+  margin-bottom: 20px;
+  display: flex;
+}
+
+.tabs button {
+  color: #1e293b;
+  background: #e2e8f0;
+  flex: 1;
+  padding: 10px 14px;
+  font-size: 15px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.tabs button.active {
+  color: #ffffff;
+  background: #0f2942; /* Primary Dark Blue */
+}
+
+/* White Card Containers */
+.card {
+  background: #ffffff;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.card h2 {
+  color: #0f2942;
+  font-size: 18px;
+  margin-top: 0;
+  margin-bottom: 16px;
+  border-bottom: 1px solid #f1f5f9;
+  padding-bottom: 8px;
+}
+
+/* Input Fields and Selects */
+input, select, textarea {
+  box-sizing: border-box;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 14px;
+  display: block;
+  font-family: inherit;
+  background-color: #ffffff;
+}
+
+input:focus, select:focus, textarea:focus {
+  outline: 2px solid #10b981;
+}
+
+/* Buttons */
+button {
+  color: #ffffff;
+  cursor: pointer;
+  background: #0f2942;
+  border: none;
+  border-radius: 6px;
+  margin-right: 8px;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+button.green {
+  background: #10b981; /* Emerald Green */
+}
+
+button.red {
+  background: #dc2626; /* Red for Delete */
+}
+
+button.grey {
+  background: #64748b; /* Grey for Cancel */
+}
+
+/* Search Bar */
+.search {
+  gap: 8px;
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.search input {
+  margin-bottom: 0;
+}
+
+/* Property / Tenant Item Card */
+.item-box {
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 12px;
+  padding: 14px 16px;
+  display: flex;
+  background: #ffffff;
+}
+
+.item-box h3 {
+  margin: 0 0 4px;
+  color: #0f2942;
+  font-size: 16px;
+}
+
+.item-box p {
+  color: #475569;
+  margin: 3px 0;
+  font-size: 14px;
+}
+
+.item-box .price {
+  color: #10b981;
+  font-weight: bold;
+}
+
+.actions {
+  gap: 6px;
+  display: flex;
+  flex-shrink: 0;
+}
+
+/* Table Style for Applications */
+.table-wrap {
+  margin-top: 12px;
+  overflow-x: auto;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  text-align: left;
+  border-bottom: 1px solid #e2e8f0;
+  padding: 10px;
+  font-size: 14px;
+}
+
+th {
+  background: #f8fafc;
+  color: #0f2942;
+  font-weight: bold;
+}
+
+/* Error or Notice text */
+.error {
+  color: #dc2626;
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+.empty-text {
+  color: #64748b;
+  font-size: 14px;
+  text-align: center;
+  padding: 15px 0;
+}
+
+@media (max-width: 600px) {
+  .item-box {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .actions {
+    width: 100%;
+    justify-content: flex-end;
+  }
+}
