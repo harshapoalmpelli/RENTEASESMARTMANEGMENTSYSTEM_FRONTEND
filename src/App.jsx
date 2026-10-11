@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import './App.css';
 
-// Backend REST API Base URL (Spring Boot running on port 8080)
-const API_BASE = "http://localhost:8080";
+// Backend REST API Base URL (configured via VITE_API_BASE_URL on Render, or localhost:8080 locally)
+const API_BASE = import.meta.env.VITE_API_BASE_URL || "http://localhost:8080";
 
 export default function App() {
   const [activeTab, setActiveTab] = useState('properties');
